@@ -47,7 +47,7 @@ public class PgExtService implements BasicLibraryService {
     registerErrorClass(ruby, "ConnectionBad", ConnectionBadClass);
     defineErrors(ruby);
 
-    Errors.initializeError(ruby);
+    //Errors.initializeError(ruby);
 
     // create the connection status constants
     for(ConnectionStatus status : ConnectionStatus.values()) {
